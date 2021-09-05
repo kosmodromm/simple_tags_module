@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    padding: 10px;
+}
+
+.hint {
+    color: #7c7c7c;
+    font-size: small;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    user-select: none;
+}
+
+.tagsList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagsList div {
+    margin:0 10px 8px 0;
+}
+
+.tagsList div span {
+    user-select: none;
+    background-color: rgba(255, 153, 0, 0.356);
+}
+
+.controlElems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.readOnly:before {
+    content: "readonly";
+    position: relative;
+    left: -11px;
+    top: 7px;
+    font-size: 9px;
+    text-align: center;
+    color: #7c7c7c;
+    user-select: none;
+}
+
+.input {
+    background: transparent;
+    width: 65%;
+    height: 20px;
+    border: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    font: 400 1.2em "Barlow", sans-serif;
+    color: #242424;
+    transition: all 0.2s;
+}
+
+.input:focus {
+    background: rgba(49, 49, 49, 0.1);
+    border: none;
+    outline:none;
+}
+
+.addBtn {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 153, 0, 0.356);;
+    font-size: large;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+}
+
+.removeBtn {
+    border: none;
+    background: none;
+    padding-left: 1px;
+}
+
+.removeBtn:hover {
+    color: #f44336;
+    cursor: pointer;
+}
